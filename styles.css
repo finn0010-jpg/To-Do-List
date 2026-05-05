@@ -1,0 +1,112 @@
+/* Colors 
+Burnt Peach: #C97D60
+Powder Blush: #FFBCB5
+Almond Cream: #F2E5D7
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262322;
+    color: white;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    background-color: #542F26;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px auto;
+}
+
+.list, .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: inherit;
+}
+
+.input input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.input button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+    background-color: #262322;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.input button:hover {
+    background-color: #C97D60;
+}
+
+.tasks {
+    margin-top: 20px;
+    width: 300px;
+    overflow: auto;
+}
+
+.tasks p {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.tasks li {
+    background-color: #262322;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.done-btn, .delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    flex-direction: row;
+}
+
+.tasks li button:hover {
+    color: #C97D60;
+}
+
+.done {
+    text-decoration-line: line-through;
+    text-decoration-thickness: 2px;
+}
